@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="Project-task-list">
     <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <h1>Minha Lista de Tarefas</h1>
-        <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
+        <p id="funcionamento">
+            Clique duas vezes em um item para marcá-lo como completo
+        </p>
     </header>
     <main>
-        <div>
-            <form>
-                <input id="texto-tarefa">
-            </form>
-            <ol id="lista-tarefas">
-
-            </ol>
-        </div>
-        <div>
-            <button id="criar-tarefa"></button>
-        </div>
+        <section id="sistemaDeEntrada">
+            <input type= "text" id="texto-tarefa"/>
+            <button id="criar-tarefa">Make Task</button>
+        </section>
+        <section>
+            <ol id="lista-tarefas"></ol>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
