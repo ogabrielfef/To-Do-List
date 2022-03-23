@@ -11,7 +11,7 @@ document.getElementById('criar-tarefa').addEventListener('click', function receb
     listTask.appendChild(createList);
     document.getElementById('texto-tarefa').value = '';
     color(listTask);
-    finalizar(createList)
+    finalizar(createList);
 });
 
 function color (color){
@@ -38,3 +38,10 @@ function finalizar(finaliza){
             }
     })
 };
+
+document.getElementById('apaga-tudo').addEventListener('click', function() {
+    let apaga = document.querySelectorAll('.itenList');
+    for(let i = 0; i < apaga.length; i++){
+        apaga[i].remove();
+    }
+});
