@@ -1,22 +1,21 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main, header{
+main, header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#criar-tarefa{
+#criar-tarefa {
     width: 70px;
     height: 48px;
 }
 
-#sistemaDeEntrada{
+#sistemaDeEntrada {
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -24,19 +23,19 @@ main, header{
     flex-direction: row;
 }
 
-#texto-tarefa{
+#texto-tarefa {
     width: 200px;
     height: 50px;
 }
 
-.itenList{
+.itenList {
     background-color: white;
 }
 
-.ativo{
-    background-color: rgb(128, 128, 128);
+.ativo {
+    background-color: gray;
 }
 
-.completed{
-    text-decoration: line-through solid rgb(0, 0, 0);
+.completed {
+    text-decoration: line-through solid black;
 }
