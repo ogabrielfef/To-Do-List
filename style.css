@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -36,4 +35,8 @@ main, header{
 
 .ativo{
     background-color: rgb(128, 128, 128);
+}
+
+.completed{
+    text-decoration: line-through solid rgb(0, 0, 0);
 }

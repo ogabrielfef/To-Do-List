@@ -7,6 +7,7 @@ document.getElementById('criar-tarefa').addEventListener('click', function receb
     listTask.appendChild(createList);
     document.getElementById('texto-tarefa').value ='';
     color(listTask);
+    finalizar(createList)
 });
 
 function color (color){
@@ -18,5 +19,19 @@ function color (color){
             newColor[0].classList.remove('ativo');
         }
         event.target.classList.add('ativo');
+    })
+};
+
+function finalizar(finaliza){
+
+    finaliza.addEventListener('dblclick', function(event){
+
+            let teste = event.target;
+
+            if(teste.classList.contains('completed')){
+                event.target.classList.remove('completed');
+            }else{
+                event.target.classList.add('completed');
+            }
     })
 };
