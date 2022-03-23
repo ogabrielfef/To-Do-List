@@ -1,24 +1,24 @@
 {
   "stats": {
     "suites": 14,
-    "tests": 0,
-    "passes": 0,
+    "tests": 28,
+    "passes": 5,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-03-22T20:45:26.748Z",
-    "end": "2022-03-22T20:45:30.466Z",
-    "duration": 3718,
+    "failures": 23,
+    "start": "2022-03-23T16:12:37.493Z",
+    "end": "2022-03-23T16:13:18.192Z",
+    "duration": 40699,
     "testsRegistered": 28,
-    "passPercent": 0,
+    "passPercent": 17.857142857142858,
     "pendingPercent": 0,
-    "other": 14,
-    "hasOther": true,
-    "skipped": 28,
-    "hasSkipped": true
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
   },
   "results": [
     {
-      "uuid": "860bb438-7549-4b0b-aaf1-e00175aea233",
+      "uuid": "e7e83e0d-f5b3-44a8-ac5d-73060cdeec33",
       "title": "",
       "fullFile": "cypress/integration/project.spec.js",
       "file": "cypress/integration/project.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b484bf1d-6a6c-4a56-92c7-44291ac613c5",
+          "uuid": "3d3e81b2-62e5-449b-8d48-f0485be5a507",
           "title": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header>",
           "fullFile": "",
           "file": "",
@@ -38,39 +38,35 @@
               "title": "Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
               "fullTitle": "1 - Adicone à sua lista o título \"Minha Lista de Tarefas\" em uma tag <header> Será verificado se sua página possui uma tag `header` com o conteúdo `Minha Lista de Tarefas`",
               "timedOut": null,
-              "duration": 372,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 193,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get('header').contains(TODO_PAGE_TITLE);",
-              "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '1 - Adicone à sua lista o t...'\n    at http://localhost:32769/script.js:14:5",
-                "diff": null
-              },
-              "uuid": "2f7e3d86-f599-4e0d-aec5-22473e9fb095",
-              "parentUUID": "b484bf1d-6a6c-4a56-92c7-44291ac613c5",
+              "err": {},
+              "uuid": "12b78028-62cd-4e52-a13e-245f576aae8c",
+              "parentUUID": "3d3e81b2-62e5-449b-8d48-f0485be5a507",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "2f7e3d86-f599-4e0d-aec5-22473e9fb095"
+          "passes": [
+            "12b78028-62cd-4e52-a13e-245f576aae8c"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 372,
+          "duration": 193,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "7dd85f94-b04a-4370-a040-84357e7c254d",
+          "uuid": "dc260fe3-b1ec-4f63-9fde-13c49d1f0e53",
           "title": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\"",
           "fullFile": "",
           "file": "",
@@ -81,39 +77,35 @@
               "title": "Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
               "fullTitle": "2 - Adicione abaixo do título um pequeno e discreto parágrafo com id=\"funcionamento\" e com o texto \"Clique duas vezes em um item para marcá-lo como completo\" Será verificado que existe na sua página um elemento com o id `funcionamento` com o conteúdo `Clique duas vezes em um item para marcá-lo como completo`",
               "timedOut": null,
-              "duration": 285,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 118,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(TODO_PAGE_DESCRIPTION_SELECTOR).contains(TODO_PAGE_DESCRIPTION);",
-              "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '2 - Adicione abaixo do títu...'\n    at http://localhost:32769/script.js:14:5",
-                "diff": null
-              },
-              "uuid": "8d2bea7d-dda8-4ee6-bf4e-de53108ab5da",
-              "parentUUID": "7dd85f94-b04a-4370-a040-84357e7c254d",
+              "err": {},
+              "uuid": "f63c2e4e-f0ef-4d16-b22b-26c05d677c98",
+              "parentUUID": "dc260fe3-b1ec-4f63-9fde-13c49d1f0e53",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "8d2bea7d-dda8-4ee6-bf4e-de53108ab5da"
+          "passes": [
+            "f63c2e4e-f0ef-4d16-b22b-26c05d677c98"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 285,
+          "duration": 118,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "c770188e-74ff-4e29-9998-d6af606d78c9",
+          "uuid": "c209e2c1-1238-4661-b3c0-0268d8f3536d",
           "title": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista",
           "fullFile": "",
           "file": "",
@@ -124,39 +116,35 @@
               "title": "Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
               "fullTitle": "3 - Adicione um input com o id=\"texto-tarefa\" onde o usuário poderá digitar o nome do item que deseja adicionar à lista Será verificada a existência de um elemento do tipo `input` com o id `texto-tarefa`",
               "timedOut": null,
-              "duration": 250,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(TODO_ADD_INPUT_SELECTOR).should('exist');",
-              "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '3 - Adicione um input com o...'\n    at http://localhost:32769/script.js:14:5",
-                "diff": null
-              },
-              "uuid": "f79abd40-cd28-4010-ab58-bad2896b7646",
-              "parentUUID": "c770188e-74ff-4e29-9998-d6af606d78c9",
+              "err": {},
+              "uuid": "01780fbb-0525-4f7f-a0e8-26fbd3971123",
+              "parentUUID": "c209e2c1-1238-4661-b3c0-0268d8f3536d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "f79abd40-cd28-4010-ab58-bad2896b7646"
+          "passes": [
+            "01780fbb-0525-4f7f-a0e8-26fbd3971123"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 250,
+          "duration": 121,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "1a03a52e-6f05-49e5-bcd0-a62b4b2da606",
+          "uuid": "316840f1-1acd-4f96-819b-6d8f4e0a034c",
           "title": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\"",
           "fullFile": "",
           "file": "",
@@ -167,39 +155,35 @@
               "title": "Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
               "fullTitle": "4 - Adicione uma lista ordenada de tarefas com o id=\"lista-tarefas\" Será verificada a existência de um elemento `ol` com o id `lista-tarefas`",
               "timedOut": null,
-              "duration": 262,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 131,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(TODO_LIST_SELECTOR).should('exist');",
-              "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '4 - Adicione uma lista orde...'\n    at http://localhost:32769/script.js:14:5",
-                "diff": null
-              },
-              "uuid": "f9c5db01-d078-4f92-aa95-d22215e00b8b",
-              "parentUUID": "1a03a52e-6f05-49e5-bcd0-a62b4b2da606",
+              "err": {},
+              "uuid": "c4103613-413b-4e06-859f-e3d068a78ace",
+              "parentUUID": "316840f1-1acd-4f96-819b-6d8f4e0a034c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "f9c5db01-d078-4f92-aa95-d22215e00b8b"
+          "passes": [
+            "c4103613-413b-4e06-859f-e3d068a78ace"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 262,
+          "duration": 131,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "b2753608-3c27-4a63-9060-a03309e2cd06",
+          "uuid": "18ecff53-4c85-4bda-b142-8d45fdc03c5b",
           "title": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo",
           "fullFile": "",
           "file": "",
@@ -210,21 +194,17 @@
               "title": "Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
               "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo Será verificada a existência de um elemento do tipo `button` com o id `criar-tarefa",
               "timedOut": null,
-              "duration": 221,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 135,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(TODO_ADD_BUTTON_SELECTOR).should('exist');",
-              "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '5 - Adicione um botão com i...'\n    at http://localhost:32769/script.js:14:5",
-                "diff": null
-              },
-              "uuid": "d8d9fc1a-fe15-491e-9236-8cdb80b04069",
-              "parentUUID": "b2753608-3c27-4a63-9060-a03309e2cd06",
+              "err": {},
+              "uuid": "153bd2ab-16ac-4439-ad68-ffc1f8404ec9",
+              "parentUUID": "18ecff53-4c85-4bda-b142-8d45fdc03c5b",
               "isHook": false,
               "skipped": false
             },
@@ -232,56 +212,64 @@
               "title": "No campo de input será digitado o texto de uma tarefa qualquer e, em seguida, clicar-se-á no botão de criar tarefa. Será verificado que, após o clique, o texto digitado aparece na lista e desaparece do input",
               "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo No campo de input será digitado o texto de uma tarefa qualquer e, em seguida, clicar-se-á no botão de criar tarefa. Será verificado que, após o clique, o texto digitado aparece na lista e desaparece do input",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 730,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
-              "err": {},
-              "uuid": "671e435a-60f6-40dc-8b72-57d779f83825",
-              "parentUUID": "b2753608-3c27-4a63-9060-a03309e2cd06",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "2d57ec3f-bd2e-4b56-ad34-2886db649b28",
+              "parentUUID": "18ecff53-4c85-4bda-b142-8d45fdc03c5b",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "A adição de elementos na lista será feita algumas vezes, e será checado se todos os itens criados permanecem na lista na medida em que novos são adicionados",
               "fullTitle": "5 - Adicione um botão com id=\"criar-tarefa\" e, ao clicar nesse botão, um novo item deverá ser criado ao final da lista e o texto do input deve ser limpo A adição de elementos na lista será feita algumas vezes, e será checado se todos os itens criados permanecem na lista na medida em que novos são adicionados",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 706,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todo1 = {\n  content: 'minha primeira tarefa'\n};\nvar todo2 = {\n  content: 'minha segunda tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\ncy.get(TODO_ADD_INPUT_SELECTOR).should('have.value', '');",
-              "err": {},
-              "uuid": "2491e766-845f-4bed-b04c-ab9fe3a4d3d6",
-              "parentUUID": "b2753608-3c27-4a63-9060-a03309e2cd06",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "b0e818c6-6df7-4fc7-acd7-059613d32572",
+              "parentUUID": "18ecff53-4c85-4bda-b142-8d45fdc03c5b",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
+          "passes": [
+            "153bd2ab-16ac-4439-ad68-ffc1f8404ec9"
+          ],
           "failures": [
-            "d8d9fc1a-fe15-491e-9236-8cdb80b04069"
+            "2d57ec3f-bd2e-4b56-ad34-2886db649b28",
+            "b0e818c6-6df7-4fc7-acd7-059613d32572"
           ],
           "pending": [],
-          "skipped": [
-            "671e435a-60f6-40dc-8b72-57d779f83825",
-            "2491e766-845f-4bed-b04c-ab9fe3a4d3d6"
-          ],
-          "duration": 221,
+          "skipped": [],
+          "duration": 1571,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "4b1b19fa-3d73-4452-b92c-d24877946f5c",
+          "uuid": "9c460d9c-f430-4b18-b9f2-8b98b483762c",
           "title": "6 - Ordene os itens da lista de tarefas por ordem de criação",
           "fullFile": "",
           "file": "",
@@ -292,7 +280,7 @@
               "title": "Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
               "fullTitle": "6 - Ordene os itens da lista de tarefas por ordem de criação Três itens serão criados na lista e será checado se eles estão ordenados por ordem de criação - ou seja, primeiro o primeiro item criado, depois o segundo, e assim por diante",
               "timedOut": null,
-              "duration": 215,
+              "duration": 569,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -301,12 +289,12 @@
               "context": null,
               "code": "var todo1 = {\n  content: 'minha tarefa'\n};\nvar todo2 = {\n  content: 'minha outra tarefa'\n};\nvar todo3 = {\n  content: 'minha terceira tarefa'\n};\naddTodo(todo1);\ncheckTodoList([todo1]);\naddTodo(todo2);\ncheckTodoList([todo1, todo2]);\naddTodo(todo3);\ncheckTodoList([todo1, todo2, todo3]);",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '6 - Ordene os itens da list...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
                 "diff": null
               },
-              "uuid": "d29edeed-b180-475c-8132-2b9c61090e53",
-              "parentUUID": "4b1b19fa-3d73-4452-b92c-d24877946f5c",
+              "uuid": "0c0938bc-8511-4867-8a69-e8553f88e57d",
+              "parentUUID": "9c460d9c-f430-4b18-b9f2-8b98b483762c",
               "isHook": false,
               "skipped": false
             }
@@ -314,17 +302,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "d29edeed-b180-475c-8132-2b9c61090e53"
+            "0c0938bc-8511-4867-8a69-e8553f88e57d"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 215,
+          "duration": 569,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "347533ca-69c8-4963-8673-cf645599af1e",
+          "uuid": "1d7dd51a-f053-4b72-a731-6ac5822a4ab7",
           "title": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128)",
           "fullFile": "",
           "file": "",
@@ -335,7 +323,7 @@
               "title": "Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
               "fullTitle": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128) Será verificado que, ao se carregar a página, os itens da lista **não tem** o estilo CSS `background-color: rgb(128, 128, 128)`",
               "timedOut": null,
-              "duration": 240,
+              "duration": 687,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -344,12 +332,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '7 - Clicar em um item da li...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
                 "diff": null
               },
-              "uuid": "ba5faf2d-83cf-4274-88a7-97b367c2d01a",
-              "parentUUID": "347533ca-69c8-4963-8673-cf645599af1e",
+              "uuid": "07456f86-88f8-4f4f-9f05-76b044945a15",
+              "parentUUID": "1d7dd51a-f053-4b72-a731-6ac5822a4ab7",
               "isHook": false,
               "skipped": false
             },
@@ -357,37 +345,40 @@
               "title": "Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`",
               "fullTitle": "7 - Clicar em um item da lista deve alterar a cor de fundo do item para cinza rgb(128,128,128) Será verificado que, ao se clicar em um item da lista, ele passa a ter o estilo CSS `background-color: rgb(128, 128, 128)`",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 670,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});",
-              "err": {},
-              "uuid": "0c56318f-fed0-4e63-a9df-0c678fb74c3a",
-              "parentUUID": "347533ca-69c8-4963-8673-cf645599af1e",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "dde7b706-9954-43f1-a0e2-493a32f62401",
+              "parentUUID": "1d7dd51a-f053-4b72-a731-6ac5822a4ab7",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "ba5faf2d-83cf-4274-88a7-97b367c2d01a"
+            "07456f86-88f8-4f4f-9f05-76b044945a15",
+            "dde7b706-9954-43f1-a0e2-493a32f62401"
           ],
           "pending": [],
-          "skipped": [
-            "0c56318f-fed0-4e63-a9df-0c678fb74c3a"
-          ],
-          "duration": 240,
+          "skipped": [],
+          "duration": 1357,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "f3ab7822-ccb4-4b33-860b-1a627deed188",
+          "uuid": "cb89fd23-683e-473b-864a-4c7d9f1a67fe",
           "title": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo",
           "fullFile": "",
           "file": "",
@@ -398,7 +389,7 @@
               "title": "Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
               "fullTitle": "8 - Não deve ser possível selecionar mais de um elemento da lista ao mesmo tempo Será verificado que, quando um elemento da lista é selecionado, o elemento selecionado previamente deixa de sê-lo. Isso é verificado através da presença ou não do estilo `background-color: rgb(128, 128, 128)` no elemento",
               "timedOut": null,
-              "duration": 221,
+              "duration": 629,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -407,12 +398,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'uma tarefa qualquer'\n}, {\n  content: 'uma outra tarefa atoa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');\ncy.get(TODO_LIST_LINE_SELECTOR).first().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).last().click().then(function ($li) {\n  expect($li).to.have.css('background-color', 'rgb(128, 128, 128)');\n});\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'background-color', 'rgb(128, 128, 128)');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '8 - Não deve ser possível s...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
                 "diff": null
               },
-              "uuid": "26be5a2b-4554-484f-8b32-22d76d3aebd3",
-              "parentUUID": "f3ab7822-ccb4-4b33-860b-1a627deed188",
+              "uuid": "20efdb4f-9727-4467-ac88-36558cc4a5a9",
+              "parentUUID": "cb89fd23-683e-473b-864a-4c7d9f1a67fe",
               "isHook": false,
               "skipped": false
             }
@@ -420,17 +411,17 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "26be5a2b-4554-484f-8b32-22d76d3aebd3"
+            "20efdb4f-9727-4467-ac88-36558cc4a5a9"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 221,
+          "duration": 629,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "bbaf16de-f4a5-40f3-b3cb-7f43da895c7b",
+          "uuid": "02ec7763-9102-4f5e-a78a-96a6310a245f",
           "title": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item",
           "fullFile": "",
           "file": "",
@@ -441,7 +432,7 @@
               "title": "Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
               "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que, antes da ação ser disparada, o elemento adicionado à lista não tem nem a classe `completed` nem o estilo `line-through solid rgb(0, 0, 0)`",
               "timedOut": null,
-              "duration": 239,
+              "duration": 712,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -450,12 +441,12 @@
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '9 - Clicar duas vezes em um...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
                 "diff": null
               },
-              "uuid": "b4ff79a0-932b-4f72-a642-5f0a3258eeb0",
-              "parentUUID": "bbaf16de-f4a5-40f3-b3cb-7f43da895c7b",
+              "uuid": "21bfded8-26a7-40e3-bbe4-718654abc4a2",
+              "parentUUID": "02ec7763-9102-4f5e-a78a-96a6310a245f",
               "isHook": false,
               "skipped": false
             },
@@ -463,56 +454,63 @@
               "title": "Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`",
               "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que a ação pedida é disparada mediante duplo clique no elemento da lista e que os elementos da lista completos tem em si a classe `completed` e a propriedade `text-decoration` com o valor `line-through solid rgb(0, 0, 0)`",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 698,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('have.class', 'completed');\ncy.get('.completed').should('have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
-              "err": {},
-              "uuid": "96a9300f-97ec-46e2-bab9-002cd937ed44",
-              "parentUUID": "bbaf16de-f4a5-40f3-b3cb-7f43da895c7b",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "65ee6c59-35fc-4e14-a30f-43745cac6b73",
+              "parentUUID": "02ec7763-9102-4f5e-a78a-96a6310a245f",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo",
               "fullTitle": "9 - Clicar duas vezes em um item, faz com que ele seja riscado, indicando que foi completo. Deve ser possível desfazer essa ação clicando novamente duas vezes no item Será verificado que, com um segundo duplo clique, um elemento completo deixa de sê-lo",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 697,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'já terminei essa tarefa'\n}, {\n  content: 'está eu ainda não terminei'\n}];\naddTodos(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick().dblclick();\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.class', 'completed');\ncy.get(TODO_LIST_LINE_SELECTOR).first().should('not.have.css', 'text-decoration', 'line-through solid rgb(0, 0, 0)');",
-              "err": {},
-              "uuid": "d0368e4f-beda-41f4-80ef-75bce6ad04e3",
-              "parentUUID": "bbaf16de-f4a5-40f3-b3cb-7f43da895c7b",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "84c6f267-0139-4751-995f-5b88c9949263",
+              "parentUUID": "02ec7763-9102-4f5e-a78a-96a6310a245f",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "b4ff79a0-932b-4f72-a642-5f0a3258eeb0"
+            "21bfded8-26a7-40e3-bbe4-718654abc4a2",
+            "65ee6c59-35fc-4e14-a30f-43745cac6b73",
+            "84c6f267-0139-4751-995f-5b88c9949263"
           ],
           "pending": [],
-          "skipped": [
-            "96a9300f-97ec-46e2-bab9-002cd937ed44",
-            "d0368e4f-beda-41f4-80ef-75bce6ad04e3"
-          ],
-          "duration": 239,
+          "skipped": [],
+          "duration": 2107,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "e0b4c2ed-2e98-465c-800b-2be977ffabf1",
+          "uuid": "83000b34-7baa-4ddc-9c40-56bad514c373",
           "title": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista",
           "fullFile": "",
           "file": "",
@@ -523,7 +521,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `apaga-tudo`",
               "fullTitle": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista Será verificado que existe um elemento `button` com o id `apaga-tudo`",
               "timedOut": null,
-              "duration": 221,
+              "duration": 4315,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -532,12 +530,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '10 - Adicione um botão com ...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#apaga-tudo', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#apaga-tudo', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
                 "diff": null
               },
-              "uuid": "6c10874b-cea8-4773-851d-ae3aab6952b0",
-              "parentUUID": "e0b4c2ed-2e98-465c-800b-2be977ffabf1",
+              "uuid": "2a2ff66a-6aca-44df-9f61-c1629a7bf7e0",
+              "parentUUID": "83000b34-7baa-4ddc-9c40-56bad514c373",
               "isHook": false,
               "skipped": false
             },
@@ -545,37 +543,40 @@
               "title": "Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia",
               "fullTitle": "10 - Adicione um botão com id=\"apaga-tudo\" que quando clicado deve apagar todos os itens da lista Será verificado que, dado que uma lista possui tarefas, um clique no botão a deixa vazia",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 641,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'blablabla'\n}, {\n  content: 'hahahahaha'\n}];\naddTodos(todos);\ncy.get(TODO_REMOVE_ALL_BUTTON_SELECTOR).click();\ncheckTodoList();",
-              "err": {},
-              "uuid": "8b9de46f-6b45-4327-bc83-66c1dc903173",
-              "parentUUID": "e0b4c2ed-2e98-465c-800b-2be977ffabf1",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "b498cfdc-4591-4cd7-a78e-2d725b2ca669",
+              "parentUUID": "83000b34-7baa-4ddc-9c40-56bad514c373",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "6c10874b-cea8-4773-851d-ae3aab6952b0"
+            "2a2ff66a-6aca-44df-9f61-c1629a7bf7e0",
+            "b498cfdc-4591-4cd7-a78e-2d725b2ca669"
           ],
           "pending": [],
-          "skipped": [
-            "8b9de46f-6b45-4327-bc83-66c1dc903173"
-          ],
-          "duration": 221,
+          "skipped": [],
+          "duration": 4956,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "9bcabc26-8ca1-4a2a-9762-39cc7c638f14",
+          "uuid": "622136d5-68b4-4e39-9af1-a1f063c7968e",
           "title": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista",
           "fullFile": "",
           "file": "",
@@ -586,7 +587,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `remover-finalizados`",
               "fullTitle": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista Será verificado que existe um elemento `button` com o id `remover-finalizados`",
               "timedOut": null,
-              "duration": 236,
+              "duration": 4269,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -595,12 +596,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '11 - Adicione um botão com ...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#remover-finalizados', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#remover-finalizados', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
                 "diff": null
               },
-              "uuid": "28560eee-8253-48ed-987a-8e945eccdc7c",
-              "parentUUID": "9bcabc26-8ca1-4a2a-9762-39cc7c638f14",
+              "uuid": "9c5521b8-abff-4a6b-972d-e396133a5d17",
+              "parentUUID": "622136d5-68b4-4e39-9af1-a1f063c7968e",
               "isHook": false,
               "skipped": false
             },
@@ -608,37 +609,40 @@
               "title": "Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista",
               "fullTitle": "11 - Adicione um botão com id=\"remover-finalizados\" que quando clicado remove **somente** os elementos finalizados da sua lista Será verificado que, ao clicar no botão, todos os elementos marcados como feitos são removidos da lista",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 867,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todo1 = {\n  content: 'vou terminar essa tarefa logo'\n};\nvar todo2 = {\n  content: 'essa tarefa eu vou demorar para finalizar'\n};\nvar todo3 = {\n  content: 'essa tarefa tbm vai demorar...'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).dblclick();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).dblclick();\ncy.get(TODO_REMOVE_DONE_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
-              "err": {},
-              "uuid": "5045b463-d39b-4786-9681-efe6153c4f57",
-              "parentUUID": "9bcabc26-8ca1-4a2a-9762-39cc7c638f14",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "d0376f8f-0f3e-49ac-820b-d5b3677800c3",
+              "parentUUID": "622136d5-68b4-4e39-9af1-a1f063c7968e",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "28560eee-8253-48ed-987a-8e945eccdc7c"
+            "9c5521b8-abff-4a6b-972d-e396133a5d17",
+            "d0376f8f-0f3e-49ac-820b-d5b3677800c3"
           ],
           "pending": [],
-          "skipped": [
-            "5045b463-d39b-4786-9681-efe6153c4f57"
-          ],
-          "duration": 236,
+          "skipped": [],
+          "duration": 5136,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "ef81a6ab-3666-4964-af88-911f96f0559d",
+          "uuid": "0b828824-45a8-4492-8e6f-159960f96fc3",
           "title": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava",
           "fullFile": "",
           "file": "",
@@ -649,7 +653,7 @@
               "title": "Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
               "fullTitle": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava Será verificado que existe um elemento `button` com o id `salvar-tarefas`",
               "timedOut": null,
-              "duration": 228,
+              "duration": 4302,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -658,12 +662,12 @@
               "context": null,
               "code": "cy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '12 - Adicione um botão com ...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#salvar-tarefas', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#salvar-tarefas', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
                 "diff": null
               },
-              "uuid": "319d8d81-27e3-47cd-a728-ccbba2e01d06",
-              "parentUUID": "ef81a6ab-3666-4964-af88-911f96f0559d",
+              "uuid": "bb311b40-a8c6-4e58-8f6b-a52e559fcd37",
+              "parentUUID": "0b828824-45a8-4492-8e6f-159960f96fc3",
               "isHook": false,
               "skipped": false
             },
@@ -671,37 +675,40 @@
               "title": "Será verificado que, quando a lista tem vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.",
               "fullTitle": "12 - Adicione um botão com id=\"salvar-tarefas\" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava Será verificado que, quando a lista tem vários elementos, alguns dos quais marcados como finalizados, um recarregamento da página mantém a lista exatamente como está.",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 850,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todo1 = {\n  content: 'primeira tarefa a ser salva'\n};\nvar todo2 = {\n  content: 'esta tarefa será salva também'\n};\nvar todo3 = {\n  content: 'mais uma para salvar'\n};\nvar todos = [todo1, todo2, todo3];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).first().dblclick();\ncy.get(TODO_SAVE_LIST_BUTTON_SELECTOR).click();\ncy.reload();\nvar newTodosState = [(0, _objectSpread2[\"default\"])({}, todo1, {\n  done: true\n}), todo2, todo3];\ncheckTodoList(newTodosState);",
-              "err": {},
-              "uuid": "3c3c0be2-a2d0-4f5d-9194-c1ee8a1c1c69",
-              "parentUUID": "ef81a6ab-3666-4964-af88-911f96f0559d",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "9b04b6dc-5124-41db-9871-5ada27ef81e0",
+              "parentUUID": "0b828824-45a8-4492-8e6f-159960f96fc3",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "319d8d81-27e3-47cd-a728-ccbba2e01d06"
+            "bb311b40-a8c6-4e58-8f6b-a52e559fcd37",
+            "9b04b6dc-5124-41db-9871-5ada27ef81e0"
           ],
           "pending": [],
-          "skipped": [
-            "3c3c0be2-a2d0-4f5d-9194-c1ee8a1c1c69"
-          ],
-          "duration": 228,
+          "skipped": [],
+          "duration": 5152,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+          "uuid": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
           "title": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas",
           "fullFile": "",
           "file": "",
@@ -712,7 +719,7 @@
               "title": "Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificada a existência de dois elementos `button`, um com o id `mover-cima` e o outro com o id `mover-baixo`",
               "timedOut": null,
-              "duration": 215,
+              "duration": 4266,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -721,12 +728,12 @@
               "context": null,
               "code": "cy.get(TODO_MOVE_UP_BUTTON_SELECTOR).should('exist');\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '13 - Adicione dois botões, ...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#mover-cima', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#mover-cima', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
                 "diff": null
               },
-              "uuid": "2ba5e0e9-e17f-446f-9b1c-7fe2613e64a0",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "uuid": "443724b3-0983-4a95-baf9-476793561783",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
               "skipped": false
             },
@@ -734,113 +741,132 @@
               "title": "Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, dado que diversos elementos foram acrescentados à lista, movimentá-los de formas diversas os deixa nas posições esperadas",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 708,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\nvar newTodosState = [todos[3], todos[2], todos[1], todos[0]];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(4)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(3)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(newTodosState);",
-              "err": {},
-              "uuid": "738a6416-be4d-4a06-9d1a-bd6db51d8d8a",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "8a392980-54fe-4d43-8183-4303b1a6f193",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, caso algum elemento esteja finalizado, este status deve persistir ainda que se mova o elemento",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 677,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa',\n  done: true\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click().dblclick();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
-              "err": {},
-              "uuid": "f69ad411-dd50-462a-b68a-c78523fb5513",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "311992e3-1bc6-4edd-8206-9ca0b80b8796",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que, caso nenhum elemento esteja selecionado, clicar nos botões não altera a lista",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 712,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}, {\n  content: 'terceira tarefa'\n}, {\n  content: 'quarta tarefa'\n}];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
-              "err": {},
-              "uuid": "faf4349a-aec7-4735-9b2e-077d5d99b803",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "b296a6cc-19e5-4dd1-b22a-5644187537f0",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas Será verificado que um elemento que esteja selecionado deve se manter selecionado mesmo depois de movido",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 696,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\nvar newTodos = [{\n  content: 'segunda tarefa'\n}, {\n  content: 'primeira tarefa'\n}];\ncheckTodoList(newTodos);\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
-              "err": {},
-              "uuid": "17b0989f-efc8-4152-bdf7-f3af77563ad7",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "a363f8a2-c91e-4c0d-8204-e235afda44f5",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             },
             {
               "title": "_Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada",
               "fullTitle": "13 - Adicione dois botões, um com id=\"mover-cima\" e outro com id=\"mover-baixo\", que permitam mover o item selecionado para cima ou para baixo na lista de tarefas _Caso especial!_ Será verificado que, caso se tente subir o elemento no topo da lista ou, caso se tente descer o último elemento da lista, esta não deve ser alterada",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 758,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todos = [{\n  content: 'primeira tarefa'\n}, {\n  content: 'segunda tarefa'\n}];\naddTodos(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(1)\")).click();\ncy.get(TODO_MOVE_UP_BUTTON_SELECTOR).click();\ncheckTodoList(todos);\ncy.get(\"\".concat(TODO_LIST_LINE_SELECTOR, \":nth-child(2)\")).click();\ncy.get(TODO_MOVE_DOWN_BUTTON_SELECTOR).click();\ncheckTodoList(todos);",
-              "err": {},
-              "uuid": "f5f2318e-dd81-492f-a382-e724a646ac93",
-              "parentUUID": "08b35a5f-fe4f-403b-98f9-4030a98e92cb",
+              "err": {
+                "message": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Uncaught ReferenceError: deletar is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at HTMLButtonElement.receberClick (http://localhost:40131/script.js:10:5)",
+                "diff": null
+              },
+              "uuid": "b02f2be3-832b-468c-8395-af58d452998a",
+              "parentUUID": "5aa78783-8b7e-4e86-8a76-61b4685bef64",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "2ba5e0e9-e17f-446f-9b1c-7fe2613e64a0"
+            "443724b3-0983-4a95-baf9-476793561783",
+            "8a392980-54fe-4d43-8183-4303b1a6f193",
+            "311992e3-1bc6-4edd-8206-9ca0b80b8796",
+            "b296a6cc-19e5-4dd1-b22a-5644187537f0",
+            "a363f8a2-c91e-4c0d-8204-e235afda44f5",
+            "b02f2be3-832b-468c-8395-af58d452998a"
           ],
           "pending": [],
-          "skipped": [
-            "738a6416-be4d-4a06-9d1a-bd6db51d8d8a",
-            "f69ad411-dd50-462a-b68a-c78523fb5513",
-            "faf4349a-aec7-4735-9b2e-077d5d99b803",
-            "17b0989f-efc8-4152-bdf7-f3af77563ad7",
-            "f5f2318e-dd81-492f-a382-e724a646ac93"
-          ],
-          "duration": 215,
+          "skipped": [],
+          "duration": 7817,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "300d1522-a0a4-483f-bc04-2df5600ad6cd",
+          "uuid": "553fa4b2-97ee-47dd-876c-a92fd0bdc843",
           "title": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado",
           "fullFile": "",
           "file": "",
@@ -851,7 +877,7 @@
               "title": "Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
               "fullTitle": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado Será verificada a presença de um elemento `button` com um id `remover-selecionado`",
               "timedOut": null,
-              "duration": 237,
+              "duration": 4342,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -860,12 +886,12 @@
               "context": null,
               "code": "cy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).should('exist');",
               "err": {
-                "message": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'",
-                "estack": "Uncaught ReferenceError: ol is not defined\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the 'uncaught:exception' event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a 'before each' hook we are skipping the remaining tests in the current suite: '14 - Adicione um botão com ...'\n    at http://localhost:32769/script.js:14:5",
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#remover-selecionado', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#remover-selecionado', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
                 "diff": null
               },
-              "uuid": "405d1b83-c51d-4f89-9e86-72b97144c916",
-              "parentUUID": "300d1522-a0a4-483f-bc04-2df5600ad6cd",
+              "uuid": "4b57957b-abab-4e06-9254-ba0037a3f2c9",
+              "parentUUID": "553fa4b2-97ee-47dd-876c-a92fd0bdc843",
               "isHook": false,
               "skipped": false
             },
@@ -873,31 +899,34 @@
               "title": "Será verificado que, no clicar no botão, somente o elemento selecionado é removido",
               "fullTitle": "14 - Adicione um botão com id=\"remover-selecionado\" que, quando clicado, remove o item selecionado Será verificado que, no clicar no botão, somente o elemento selecionado é removido",
               "timedOut": null,
-              "duration": 0,
-              "state": "skipped",
+              "duration": 5668,
+              "state": "failed",
               "speed": null,
               "pass": false,
-              "fail": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "var todo1 = {\n  content: 'não posso remover essa tarefa'\n};\nvar todo2 = {\n  content: 'essa tarefa aqui eu posso remover'\n};\nvar todos = [todo1, todo2];\naddTodos(todos);\ncheckTodoList(todos);\ncy.get(TODO_LIST_LINE_SELECTOR).last().click();\ncy.get(TODO_REMOVE_SELECTED_BUTTON_SELECTOR).click();\ncheckTodoList([todo1]);",
-              "err": {},
-              "uuid": "dd66edb2-a5ec-47a0-aa54-ccba51907e34",
-              "parentUUID": "300d1522-a0a4-483f-bc04-2df5600ad6cd",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'button#remover-selecionado', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'button#remover-selecionado', but never found it.\n    at cypressErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149934:9)\n    at throwErr (http://localhost:40131/__cypress/runner/cypress_runner.js:149867:11)\n    at Object.throwErrByPath (http://localhost:40131/__cypress/runner/cypress_runner.js:149915:3)\n    at retry (http://localhost:40131/__cypress/runner/cypress_runner.js:144197:19)\n    at onFailFn (http://localhost:40131/__cypress/runner/cypress_runner.js:132448:16)\n    at tryCatcher (http://localhost:40131/__cypress/runner/cypress_runner.js:167415:23)\n    at Promise._settlePromiseFromHandler (http://localhost:40131/__cypress/runner/cypress_runner.js:165351:31)\n    at Promise._settlePromise (http://localhost:40131/__cypress/runner/cypress_runner.js:165408:18)\n    at Promise._settlePromise0 (http://localhost:40131/__cypress/runner/cypress_runner.js:165453:10)\n    at Promise._settlePromises (http://localhost:40131/__cypress/runner/cypress_runner.js:165528:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://localhost:40131/__cypress/runner/cypress_runner.js:162140:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162150:10)\n    at Async.drainQueues (http://localhost:40131/__cypress/runner/cypress_runner.js:162024:14)",
+                "diff": null
+              },
+              "uuid": "ca9a571d-3637-4f4e-88ef-faaa6685b22f",
+              "parentUUID": "553fa4b2-97ee-47dd-876c-a92fd0bdc843",
               "isHook": false,
-              "skipped": true
+              "skipped": false
             }
           ],
           "suites": [],
           "passes": [],
           "failures": [
-            "405d1b83-c51d-4f89-9e86-72b97144c916"
+            "4b57957b-abab-4e06-9254-ba0037a3f2c9",
+            "ca9a571d-3637-4f4e-88ef-faaa6685b22f"
           ],
           "pending": [],
-          "skipped": [
-            "dd66edb2-a5ec-47a0-aa54-ccba51907e34"
-          ],
-          "duration": 237,
+          "skipped": [],
+          "duration": 10010,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -1,9 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
+
 main, header{
     display: flex;
     flex-direction: column;
@@ -27,6 +29,11 @@ main, header{
     width: 200px;
     height: 50px;
 }
- li{
-     background-color: white;
- }
+
+.itenList{
+    background-color: white;
+}
+
+.ativo{
+    background-color: rgb(128, 128, 128);
+}
