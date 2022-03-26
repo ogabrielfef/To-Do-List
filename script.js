@@ -1,4 +1,4 @@
-document.getElementById('criar-tarefa').addEventListener('click', function receberClick() {
+document.getElementById('criar-tarefa').addEventListener('click', function() {
     
     let taskItens = document.getElementById('texto-tarefa').value;
     
