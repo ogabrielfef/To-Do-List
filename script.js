@@ -46,7 +46,7 @@ document.getElementById('apaga-tudo').addEventListener('click', function() {
     }
 });
 
-document.getElementById('salvar-tarefas').addEventListener('click', function(){
+document.getElementById('remover-finalizados').addEventListener('click', function(){
     let apagaFinalizados = document.querySelectorAll('.completed');
     for(let i = 0; i < apagaFinalizados.length; i++){
         apagaFinalizados[i].remove();
