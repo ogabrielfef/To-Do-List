@@ -45,3 +45,10 @@ document.getElementById('apaga-tudo').addEventListener('click', function() {
         apaga[i].remove();
     }
 });
+
+document.getElementById('salvar-tarefas').addEventListener('click', function(){
+    let apagaFinalizados = document.querySelectorAll('.completed');
+    for(let i = 0; i < apagaFinalizados.length; i++){
+        apagaFinalizados[i].remove();
+    }    
+});
