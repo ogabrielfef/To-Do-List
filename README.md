@@ -28,4 +28,4 @@ O To Do List é um programa pra te ajudar no dia a dia. No qual você pode criar
 
 <br>
 
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+<h2 align="center">Feito com ♥ by ogabrielfef.</h2>
